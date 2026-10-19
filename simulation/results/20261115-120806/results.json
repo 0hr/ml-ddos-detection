@@ -1,0 +1,643 @@
+{
+  "sim": "/home/harun/PycharmProjects/ML-DDoS/simulation/data/20261115-120806/dataset.parquet",
+  "split": "by repetition: repetition 3 held out as test (3 repetitions)",
+  "results": [
+    {
+      "train": "CIC-DDoS2019",
+      "test": "CIC-DDoS2019",
+      "threshold": 0.67,
+      "n": 62402,
+      "attacks": 55016,
+      "accuracy": 0.9990064421012147,
+      "precision": 0.9998180958271182,
+      "recall": 0.999054820415879,
+      "f1": 0.9994363123920356,
+      "fpr": 0.0013539128080151638,
+      "tn": 7376,
+      "fp": 10,
+      "fn": 52,
+      "tp": 54964,
+      "roc_auc": 0.9999934083621924,
+      "pr_auc": 0.9999991131609378,
+      "per_label": {
+        "BENIGN": 0.0014,
+        "DrDoS_DNS": 0.9898,
+        "DrDoS_LDAP": 0.9938,
+        "DrDoS_MSSQL": 1.0,
+        "DrDoS_NTP": 0.9995,
+        "DrDoS_NetBIOS": 0.9943,
+        "DrDoS_SNMP": 1.0,
+        "DrDoS_SSDP": 1.0,
+        "DrDoS_UDP": 0.9998,
+        "Syn": 0.9955,
+        "TFTP": 0.9995,
+        "UDP-lag": 0.9989,
+        "WebDDoS": 0.8387
+      }
+    },
+    {
+      "train": "CIC-DDoS2019",
+      "test": "Simulated",
+      "threshold": 0.67,
+      "n": 51024,
+      "attacks": 36029,
+      "accuracy": 0.4041431483223581,
+      "precision": 0.8787022078621433,
+      "recall": 0.1811596214160815,
+      "f1": 0.30038889016729187,
+      "fpr": 0.0600866955651884,
+      "tn": 14094,
+      "fp": 901,
+      "fn": 29502,
+      "tp": 6527,
+      "roc_auc": 0.6345239331537336,
+      "pr_auc": 0.8051637363119557,
+      "per_label": {
+        "BENIGN": 0.0601,
+        "Sim-HTTP-flood": 0.0401,
+        "Sim-TCP-connect-flood": 0.2009,
+        "Sim-UDP-flood": 1.0
+      }
+    },
+    {
+      "train": "Simulated",
+      "test": "CIC-DDoS2019",
+      "threshold": 0.93,
+      "n": 62402,
+      "attacks": 55016,
+      "accuracy": 0.12020448062562097,
+      "precision": 0.891156462585034,
+      "recall": 0.0023811254907663225,
+      "f1": 0.004749560393742183,
+      "fpr": 0.002166260492824262,
+      "tn": 7370,
+      "fp": 16,
+      "fn": 54885,
+      "tp": 131,
+      "roc_auc": 0.9112421683418606,
+      "pr_auc": 0.9850085350770301,
+      "per_label": {
+        "BENIGN": 0.0022,
+        "DrDoS_DNS": 0.0,
+        "DrDoS_LDAP": 0.0,
+        "DrDoS_MSSQL": 0.0,
+        "DrDoS_NTP": 0.0002,
+        "DrDoS_NetBIOS": 0.0,
+        "DrDoS_SNMP": 0.0,
+        "DrDoS_SSDP": 0.0,
+        "DrDoS_UDP": 0.0,
+        "Syn": 0.0,
+        "TFTP": 0.0174,
+        "UDP-lag": 0.0,
+        "WebDDoS": 0.0
+      }
+    },
+    {
+      "train": "Simulated",
+      "test": "Simulated",
+      "threshold": 0.93,
+      "n": 51024,
+      "attacks": 36029,
+      "accuracy": 0.7934893383505801,
+      "precision": 0.9939927137431207,
+      "recall": 0.7118432373921008,
+      "f1": 0.829583865698436,
+      "fpr": 0.010336778926308769,
+      "tn": 14840,
+      "fp": 155,
+      "fn": 10382,
+      "tp": 25647,
+      "roc_auc": 0.9845131535189997,
+      "pr_auc": 0.9930330667440784,
+      "per_label": {
+        "BENIGN": 0.0103,
+        "Sim-HTTP-flood": 0.2685,
+        "Sim-TCP-connect-flood": 0.9988,
+        "Sim-UDP-flood": 0.0039
+      }
+    },
+    {
+      "train": "Simulated, finished flows only",
+      "test": "CIC-DDoS2019",
+      "threshold": 0.93,
+      "n": 62402,
+      "attacks": 55016,
+      "accuracy": 0.11831351559244896,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "fpr": 0.00040617384240454913,
+      "tn": 7383,
+      "fp": 3,
+      "fn": 55016,
+      "tp": 0,
+      "roc_auc": 0.9084167157674162,
+      "pr_auc": 0.9816204846164125,
+      "per_label": {
+        "BENIGN": 0.0004,
+        "DrDoS_DNS": 0.0,
+        "DrDoS_LDAP": 0.0,
+        "DrDoS_MSSQL": 0.0,
+        "DrDoS_NTP": 0.0,
+        "DrDoS_NetBIOS": 0.0,
+        "DrDoS_SNMP": 0.0,
+        "DrDoS_SSDP": 0.0,
+        "DrDoS_UDP": 0.0,
+        "Syn": 0.0,
+        "TFTP": 0.0,
+        "UDP-lag": 0.0,
+        "WebDDoS": 0.0
+      }
+    },
+    {
+      "train": "Simulated, finished flows only",
+      "test": "Simulated",
+      "threshold": 0.93,
+      "n": 51024,
+      "attacks": 36029,
+      "accuracy": 0.7939597052367513,
+      "precision": 0.9935396518375241,
+      "recall": 0.7128424324849427,
+      "f1": 0.830103912474345,
+      "fpr": 0.011137045681893965,
+      "tn": 14828,
+      "fp": 167,
+      "fn": 10346,
+      "tp": 25683,
+      "roc_auc": 0.9823631404478541,
+      "pr_auc": 0.9920720176161091,
+      "per_label": {
+        "BENIGN": 0.0111,
+        "Sim-HTTP-flood": 0.2764,
+        "Sim-TCP-connect-flood": 0.9964,
+        "Sim-UDP-flood": 0.0
+      }
+    },
+    {
+      "train": "CIC + simulated",
+      "test": "CIC-DDoS2019",
+      "threshold": 0.78,
+      "n": 62402,
+      "attacks": 55016,
+      "accuracy": 0.9984936380244223,
+      "precision": 0.9999089783732615,
+      "recall": 0.998382288788716,
+      "f1": 0.999145050387456,
+      "fpr": 0.0006769564040075819,
+      "tn": 7381,
+      "fp": 5,
+      "fn": 89,
+      "tp": 54927,
+      "roc_auc": 0.9999940026801056,
+      "pr_auc": 0.9999991948185735,
+      "per_label": {
+        "BENIGN": 0.0007,
+        "DrDoS_DNS": 0.9881,
+        "DrDoS_LDAP": 0.9876,
+        "DrDoS_MSSQL": 0.9983,
+        "DrDoS_NTP": 0.9993,
+        "DrDoS_NetBIOS": 0.9886,
+        "DrDoS_SNMP": 0.9972,
+        "DrDoS_SSDP": 0.9998,
+        "DrDoS_UDP": 0.9998,
+        "Syn": 0.9917,
+        "TFTP": 0.9993,
+        "UDP-lag": 0.9978,
+        "WebDDoS": 0.6613
+      }
+    },
+    {
+      "train": "CIC + simulated",
+      "test": "Simulated",
+      "threshold": 0.78,
+      "n": 51024,
+      "attacks": 36029,
+      "accuracy": 0.899145500156789,
+      "precision": 0.9849565026224051,
+      "recall": 0.8704654583807488,
+      "f1": 0.9241785766907322,
+      "fpr": 0.03194398132710904,
+      "tn": 14516,
+      "fp": 479,
+      "fn": 4667,
+      "tp": 31362,
+      "roc_auc": 0.9863428492465839,
+      "pr_auc": 0.993986198267709,
+      "per_label": {
+        "BENIGN": 0.0319,
+        "Sim-HTTP-flood": 0.6143,
+        "Sim-TCP-connect-flood": 0.9994,
+        "Sim-UDP-flood": 1.0
+      }
+    }
+  ],
+  "domain_gap": {
+    "all flows": {
+      "auc": 0.9999984933333333,
+      "cic": 15000,
+      "sim": 15000,
+      "top_features": {
+        "Flow IAT Min": 0.1797,
+        "Init_Win_bytes_forward": 0.1132,
+        "Fwd IAT Min": 0.0833,
+        "Init_Win_bytes_backward": 0.0732,
+        "Fwd Packet Length Min": 0.0626,
+        "Min Packet Length": 0.0534,
+        "Avg Fwd Segment Size": 0.051,
+        "Fwd Packet Length Max": 0.0476
+      }
+    },
+    "benign flows": {
+      "auc": 0.9999949355555555,
+      "cic": 15000,
+      "sim": 15000,
+      "top_features": {
+        "Flow IAT Min": 0.2024,
+        "Fwd IAT Min": 0.1154,
+        "Bwd IAT Min": 0.0935,
+        "Init_Win_bytes_forward": 0.0561,
+        "Init_Win_bytes_backward": 0.0503,
+        "Fwd IAT Mean": 0.0398,
+        "Fwd IAT Max": 0.0356,
+        "Fwd IAT Total": 0.0346
+      }
+    },
+    "attack flows": {
+      "auc": 0.9999997266666667,
+      "cic": 15000,
+      "sim": 15000,
+      "top_features": {
+        "Flow IAT Min": 0.1729,
+        "Init_Win_bytes_forward": 0.1127,
+        "Init_Win_bytes_backward": 0.1071,
+        "Bwd Packets/s": 0.0846,
+        "Fwd Packet Length Max": 0.0563,
+        "Fwd Packet Length Mean": 0.0538,
+        "Fwd IAT Min": 0.051,
+        "Avg Fwd Segment Size": 0.0459
+      }
+    }
+  },
+  "detection_time": [
+    {
+      "model": "CIC-DDoS2019",
+      "session": "r3_13_benign_quiet",
+      "scenario": "benign_quiet",
+      "attack": null,
+      "label": "BENIGN",
+      "attackers": [],
+      "attack_duration_s": 0.0,
+      "detection_s": {},
+      "false_blocks": []
+    },
+    {
+      "model": "CIC-DDoS2019",
+      "session": "r3_14_benign_mixed",
+      "scenario": "benign_mixed",
+      "attack": null,
+      "label": "BENIGN",
+      "attackers": [],
+      "attack_duration_s": 0.0,
+      "detection_s": {},
+      "false_blocks": []
+    },
+    {
+      "model": "CIC-DDoS2019",
+      "session": "r3_15_benign_busy",
+      "scenario": "benign_busy",
+      "attack": null,
+      "label": "BENIGN",
+      "attackers": [],
+      "attack_duration_s": 0.0,
+      "detection_s": {},
+      "false_blocks": []
+    },
+    {
+      "model": "CIC-DDoS2019",
+      "session": "r3_16_attack_udp",
+      "scenario": "attack_udp",
+      "attack": "udp",
+      "label": "Sim-UDP-flood",
+      "attackers": [
+        "10.0.0.12",
+        "10.0.0.4",
+        "10.0.0.8"
+      ],
+      "attack_duration_s": 30.0,
+      "detection_s": {
+        "10.0.0.12": 1.01,
+        "10.0.0.4": 0.91,
+        "10.0.0.8": 0.96
+      },
+      "false_blocks": []
+    },
+    {
+      "model": "CIC-DDoS2019",
+      "session": "r3_17_attack_conn",
+      "scenario": "attack_conn",
+      "attack": "conn",
+      "label": "Sim-TCP-connect-flood",
+      "attackers": [
+        "10.0.0.12",
+        "10.0.0.4",
+        "10.0.0.8"
+      ],
+      "attack_duration_s": 30.0,
+      "detection_s": {
+        "10.0.0.12": null,
+        "10.0.0.4": null,
+        "10.0.0.8": null
+      },
+      "false_blocks": []
+    },
+    {
+      "model": "CIC-DDoS2019",
+      "session": "r3_18_attack_http",
+      "scenario": "attack_http",
+      "attack": "http",
+      "label": "Sim-HTTP-flood",
+      "attackers": [
+        "10.0.0.12",
+        "10.0.0.4",
+        "10.0.0.8"
+      ],
+      "attack_duration_s": 30.0,
+      "detection_s": {
+        "10.0.0.12": null,
+        "10.0.0.4": null,
+        "10.0.0.8": null
+      },
+      "false_blocks": []
+    },
+    {
+      "model": "Simulated, finished flows only",
+      "session": "r3_13_benign_quiet",
+      "scenario": "benign_quiet",
+      "attack": null,
+      "label": "BENIGN",
+      "attackers": [],
+      "attack_duration_s": 0.0,
+      "detection_s": {},
+      "false_blocks": []
+    },
+    {
+      "model": "Simulated, finished flows only",
+      "session": "r3_14_benign_mixed",
+      "scenario": "benign_mixed",
+      "attack": null,
+      "label": "BENIGN",
+      "attackers": [],
+      "attack_duration_s": 0.0,
+      "detection_s": {},
+      "false_blocks": []
+    },
+    {
+      "model": "Simulated, finished flows only",
+      "session": "r3_15_benign_busy",
+      "scenario": "benign_busy",
+      "attack": null,
+      "label": "BENIGN",
+      "attackers": [],
+      "attack_duration_s": 0.0,
+      "detection_s": {},
+      "false_blocks": []
+    },
+    {
+      "model": "Simulated, finished flows only",
+      "session": "r3_16_attack_udp",
+      "scenario": "attack_udp",
+      "attack": "udp",
+      "label": "Sim-UDP-flood",
+      "attackers": [
+        "10.0.0.12",
+        "10.0.0.4",
+        "10.0.0.8"
+      ],
+      "attack_duration_s": 30.0,
+      "detection_s": {
+        "10.0.0.12": null,
+        "10.0.0.4": null,
+        "10.0.0.8": null
+      },
+      "false_blocks": []
+    },
+    {
+      "model": "Simulated, finished flows only",
+      "session": "r3_17_attack_conn",
+      "scenario": "attack_conn",
+      "attack": "conn",
+      "label": "Sim-TCP-connect-flood",
+      "attackers": [
+        "10.0.0.12",
+        "10.0.0.4",
+        "10.0.0.8"
+      ],
+      "attack_duration_s": 30.0,
+      "detection_s": {
+        "10.0.0.12": 0.07,
+        "10.0.0.4": 0.07,
+        "10.0.0.8": 0.07
+      },
+      "false_blocks": []
+    },
+    {
+      "model": "Simulated, finished flows only",
+      "session": "r3_18_attack_http",
+      "scenario": "attack_http",
+      "attack": "http",
+      "label": "Sim-HTTP-flood",
+      "attackers": [
+        "10.0.0.12",
+        "10.0.0.4",
+        "10.0.0.8"
+      ],
+      "attack_duration_s": 30.0,
+      "detection_s": {
+        "10.0.0.12": null,
+        "10.0.0.4": null,
+        "10.0.0.8": null
+      },
+      "false_blocks": []
+    },
+    {
+      "model": "Simulated",
+      "session": "r3_13_benign_quiet",
+      "scenario": "benign_quiet",
+      "attack": null,
+      "label": "BENIGN",
+      "attackers": [],
+      "attack_duration_s": 0.0,
+      "detection_s": {},
+      "false_blocks": []
+    },
+    {
+      "model": "Simulated",
+      "session": "r3_14_benign_mixed",
+      "scenario": "benign_mixed",
+      "attack": null,
+      "label": "BENIGN",
+      "attackers": [],
+      "attack_duration_s": 0.0,
+      "detection_s": {},
+      "false_blocks": []
+    },
+    {
+      "model": "Simulated",
+      "session": "r3_15_benign_busy",
+      "scenario": "benign_busy",
+      "attack": null,
+      "label": "BENIGN",
+      "attackers": [],
+      "attack_duration_s": 0.0,
+      "detection_s": {},
+      "false_blocks": []
+    },
+    {
+      "model": "Simulated",
+      "session": "r3_16_attack_udp",
+      "scenario": "attack_udp",
+      "attack": "udp",
+      "label": "Sim-UDP-flood",
+      "attackers": [
+        "10.0.0.12",
+        "10.0.0.4",
+        "10.0.0.8"
+      ],
+      "attack_duration_s": 30.0,
+      "detection_s": {
+        "10.0.0.12": 8.98,
+        "10.0.0.4": null,
+        "10.0.0.8": null
+      },
+      "false_blocks": []
+    },
+    {
+      "model": "Simulated",
+      "session": "r3_17_attack_conn",
+      "scenario": "attack_conn",
+      "attack": "conn",
+      "label": "Sim-TCP-connect-flood",
+      "attackers": [
+        "10.0.0.12",
+        "10.0.0.4",
+        "10.0.0.8"
+      ],
+      "attack_duration_s": 30.0,
+      "detection_s": {
+        "10.0.0.12": 0.07,
+        "10.0.0.4": 0.07,
+        "10.0.0.8": 0.07
+      },
+      "false_blocks": []
+    },
+    {
+      "model": "Simulated",
+      "session": "r3_18_attack_http",
+      "scenario": "attack_http",
+      "attack": "http",
+      "label": "Sim-HTTP-flood",
+      "attackers": [
+        "10.0.0.12",
+        "10.0.0.4",
+        "10.0.0.8"
+      ],
+      "attack_duration_s": 30.0,
+      "detection_s": {
+        "10.0.0.12": null,
+        "10.0.0.4": null,
+        "10.0.0.8": null
+      },
+      "false_blocks": []
+    },
+    {
+      "model": "CIC + simulated",
+      "session": "r3_13_benign_quiet",
+      "scenario": "benign_quiet",
+      "attack": null,
+      "label": "BENIGN",
+      "attackers": [],
+      "attack_duration_s": 0.0,
+      "detection_s": {},
+      "false_blocks": []
+    },
+    {
+      "model": "CIC + simulated",
+      "session": "r3_14_benign_mixed",
+      "scenario": "benign_mixed",
+      "attack": null,
+      "label": "BENIGN",
+      "attackers": [],
+      "attack_duration_s": 0.0,
+      "detection_s": {},
+      "false_blocks": []
+    },
+    {
+      "model": "CIC + simulated",
+      "session": "r3_15_benign_busy",
+      "scenario": "benign_busy",
+      "attack": null,
+      "label": "BENIGN",
+      "attackers": [],
+      "attack_duration_s": 0.0,
+      "detection_s": {},
+      "false_blocks": []
+    },
+    {
+      "model": "CIC + simulated",
+      "session": "r3_16_attack_udp",
+      "scenario": "attack_udp",
+      "attack": "udp",
+      "label": "Sim-UDP-flood",
+      "attackers": [
+        "10.0.0.12",
+        "10.0.0.4",
+        "10.0.0.8"
+      ],
+      "attack_duration_s": 30.0,
+      "detection_s": {
+        "10.0.0.12": 0.86,
+        "10.0.0.4": 1.09,
+        "10.0.0.8": 0.96
+      },
+      "false_blocks": []
+    },
+    {
+      "model": "CIC + simulated",
+      "session": "r3_17_attack_conn",
+      "scenario": "attack_conn",
+      "attack": "conn",
+      "label": "Sim-TCP-connect-flood",
+      "attackers": [
+        "10.0.0.12",
+        "10.0.0.4",
+        "10.0.0.8"
+      ],
+      "attack_duration_s": 30.0,
+      "detection_s": {
+        "10.0.0.12": 0.07,
+        "10.0.0.4": 0.07,
+        "10.0.0.8": 0.07
+      },
+      "false_blocks": []
+    },
+    {
+      "model": "CIC + simulated",
+      "session": "r3_18_attack_http",
+      "scenario": "attack_http",
+      "attack": "http",
+      "label": "Sim-HTTP-flood",
+      "attackers": [
+        "10.0.0.12",
+        "10.0.0.4",
+        "10.0.0.8"
+      ],
+      "attack_duration_s": 30.0,
+      "detection_s": {
+        "10.0.0.12": null,
+        "10.0.0.4": null,
+        "10.0.0.8": null
+      },
+      "false_blocks": []
+    }
+  ]
+}

@@ -1,0 +1,6 @@
+# Exactly the versions the model was trained with: a scikit-learn pickle is only
+# guaranteed to load under the same library version. Verified on Python 3.12 and 3.14.
+scikit-learn==1.9.1
+numpy==2.5.4
+pandas==3.0.6
+joblib==1.6.0

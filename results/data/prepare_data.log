@@ -1,0 +1,12 @@
+01-12/DrDoS_UDP.csv: 3,136,802 rows in 55.0s {'DrDoS_UDP': 3134645, 'BENIGN': 2157}
+01-12/DrDoS_NetBIOS.csv: 4,094,986 rows in 56.2s {'DrDoS_NetBIOS': 4093279, 'BENIGN': 1707}
+01-12/DrDoS_DNS.csv: 5,074,413 rows in 74.4s {'DrDoS_DNS': 5071011, 'BENIGN': 3402}
+01-12/DrDoS_SNMP.csv: 5,161,377 rows in 78.5s {'DrDoS_SNMP': 5159870, 'BENIGN': 1507}
+01-12/DrDoS_MSSQL.csv: 4,524,498 rows in 81.6s {'DrDoS_MSSQL': 4522492, 'BENIGN': 2006}
+01-12/UDPLag.csv: 370,605 rows in 5.7s {'UDP-lag': 366461, 'BENIGN': 3705, 'WebDDoS': 439}
+01-12/DrDoS_LDAP.csv: 2,181,542 rows in 34.4s {'DrDoS_LDAP': 2179930, 'BENIGN': 1612}
+01-12/DrDoS_NTP.csv: 1,217,007 rows in 20.4s {'DrDoS_NTP': 1202642, 'BENIGN': 14365}
+01-12/DrDoS_SSDP.csv: 2,611,374 rows in 43.3s {'DrDoS_SSDP': 2610611, 'BENIGN': 763}
+01-12/Syn.csv: 1,582,681 rows in 20.1s {'Syn': 1582289, 'BENIGN': 392}
+01-12/TFTP.csv: 20,107,827 rows in 245.4s {'TFTP': 20082580, 'BENIGN': 25247}
+wrote /home/harun/PycharmProjects/ML-DDoS/dataset/processed/sampled.parquet (1,707,302 rows) and /home/harun/PycharmProjects/ML-DDoS/results/data/raw_stats.json

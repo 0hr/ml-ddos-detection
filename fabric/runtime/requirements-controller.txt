@@ -1,0 +1,5 @@
+# os-ken 2.x is the last line that ships osken-manager. setuptools is listed because a
+# plain `python3 -m venv` on Python 3.12 no longer installs it and os-ken imports it.
+os-ken==2.11.2
+eventlet==0.41.2
+setuptools==84.0.0

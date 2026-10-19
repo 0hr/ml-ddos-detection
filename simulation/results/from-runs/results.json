@@ -1,0 +1,218 @@
+{
+  "sim": "simulation/data/from-runs/dataset.parquet",
+  "split": "by repetition: repetition 3 held out as test (3 repetitions)",
+  "results": [
+    {
+      "train": "CIC-DDoS2019",
+      "test": "CIC-DDoS2019",
+      "threshold": 0.67,
+      "n": 62402,
+      "attacks": 55016,
+      "accuracy": 0.9990064421012147,
+      "precision": 0.9998180958271182,
+      "recall": 0.999054820415879,
+      "f1": 0.9994363123920356,
+      "fpr": 0.0013539128080151638,
+      "tn": 7376,
+      "fp": 10,
+      "fn": 52,
+      "tp": 54964,
+      "roc_auc": 0.9999934083621924,
+      "pr_auc": 0.9999991131609378,
+      "per_label": {
+        "BENIGN": 0.0014,
+        "DrDoS_DNS": 0.9898,
+        "DrDoS_LDAP": 0.9938,
+        "DrDoS_MSSQL": 1.0,
+        "DrDoS_NTP": 0.9995,
+        "DrDoS_NetBIOS": 0.9943,
+        "DrDoS_SNMP": 1.0,
+        "DrDoS_SSDP": 1.0,
+        "DrDoS_UDP": 0.9998,
+        "Syn": 0.9955,
+        "TFTP": 0.9995,
+        "UDP-lag": 0.9989,
+        "WebDDoS": 0.8387
+      }
+    },
+    {
+      "train": "CIC-DDoS2019",
+      "test": "Simulated",
+      "threshold": 0.67,
+      "n": 4530,
+      "attacks": 768,
+      "accuracy": 0.9852097130242825,
+      "precision": 0.9197604790419162,
+      "recall": 1.0,
+      "f1": 0.958203368683718,
+      "fpr": 0.017809675704412546,
+      "tn": 3695,
+      "fp": 67,
+      "fn": 0,
+      "tp": 768,
+      "roc_auc": 1.0,
+      "pr_auc": 1.0,
+      "per_label": {
+        "BENIGN": 0.0178,
+        "Sim-UDP-flood": 1.0
+      }
+    },
+    {
+      "train": "Simulated",
+      "test": "CIC-DDoS2019",
+      "threshold": 0.5,
+      "n": 62402,
+      "attacks": 55016,
+      "accuracy": 0.8035159129515079,
+      "precision": 0.9996494098398971,
+      "recall": 0.7774102079395085,
+      "f1": 0.8746331837097779,
+      "fpr": 0.0020308692120227455,
+      "tn": 7371,
+      "fp": 15,
+      "fn": 12246,
+      "tp": 42770,
+      "roc_auc": 0.9000220121573771,
+      "pr_auc": 0.9851636788503282,
+      "per_label": {
+        "BENIGN": 0.002,
+        "DrDoS_DNS": 0.7738,
+        "DrDoS_LDAP": 0.9752,
+        "DrDoS_MSSQL": 0.9949,
+        "DrDoS_NTP": 0.7545,
+        "DrDoS_NetBIOS": 0.5086,
+        "DrDoS_SNMP": 0.949,
+        "DrDoS_SSDP": 0.9924,
+        "DrDoS_UDP": 0.9936,
+        "Syn": 0.0,
+        "TFTP": 0.9949,
+        "UDP-lag": 0.2322,
+        "WebDDoS": 0.0
+      }
+    },
+    {
+      "train": "Simulated",
+      "test": "Simulated",
+      "threshold": 0.5,
+      "n": 4530,
+      "attacks": 768,
+      "accuracy": 1.0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "fpr": 0.0,
+      "tn": 3762,
+      "fp": 0,
+      "fn": 0,
+      "tp": 768,
+      "roc_auc": 1.0,
+      "pr_auc": 1.0,
+      "per_label": {
+        "BENIGN": 0.0,
+        "Sim-UDP-flood": 1.0
+      }
+    },
+    {
+      "train": "CIC + simulated",
+      "test": "CIC-DDoS2019",
+      "threshold": 0.72,
+      "n": 62402,
+      "attacks": 55016,
+      "accuracy": 0.9987660651902183,
+      "precision": 0.9998726184193766,
+      "recall": 0.9987276428675295,
+      "f1": 0.9992998026716621,
+      "fpr": 0.0009477389656106146,
+      "tn": 7379,
+      "fp": 7,
+      "fn": 70,
+      "tp": 54946,
+      "roc_auc": 0.9999944259624289,
+      "pr_auc": 0.9999992510709873,
+      "per_label": {
+        "BENIGN": 0.0009,
+        "DrDoS_DNS": 0.9881,
+        "DrDoS_LDAP": 0.9876,
+        "DrDoS_MSSQL": 0.9983,
+        "DrDoS_NTP": 0.9994,
+        "DrDoS_NetBIOS": 0.9943,
+        "DrDoS_SNMP": 0.9972,
+        "DrDoS_SSDP": 0.9999,
+        "DrDoS_UDP": 0.9998,
+        "Syn": 0.995,
+        "TFTP": 0.9995,
+        "UDP-lag": 0.9976,
+        "WebDDoS": 0.7742
+      }
+    },
+    {
+      "train": "CIC + simulated",
+      "test": "Simulated",
+      "threshold": 0.72,
+      "n": 4530,
+      "attacks": 768,
+      "accuracy": 1.0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "fpr": 0.0,
+      "tn": 3762,
+      "fp": 0,
+      "fn": 0,
+      "tp": 768,
+      "roc_auc": 1.0,
+      "pr_auc": 1.0,
+      "per_label": {
+        "BENIGN": 0.0,
+        "Sim-UDP-flood": 1.0
+      }
+    }
+  ],
+  "domain_gap": {
+    "all flows": {
+      "auc": 0.999998645910551,
+      "cic": 15000,
+      "sim": 13490,
+      "top_features": {
+        "Flow IAT Min": 0.2497,
+        "Fwd IAT Min": 0.1332,
+        "Init_Win_bytes_forward": 0.0686,
+        "Bwd IAT Min": 0.0519,
+        "Init_Win_bytes_backward": 0.0512,
+        "Bwd Packet Length Std": 0.0506,
+        "Bwd Packet Length Max": 0.0487,
+        "Flow Bytes/s": 0.0269
+      }
+    },
+    "benign flows": {
+      "auc": 0.9999976905655881,
+      "cic": 15000,
+      "sim": 11186,
+      "top_features": {
+        "Flow IAT Min": 0.1671,
+        "Fwd IAT Min": 0.1016,
+        "Bwd IAT Min": 0.0868,
+        "Init_Win_bytes_backward": 0.0685,
+        "Flow IAT Max": 0.0579,
+        "Flow Packets/s": 0.0578,
+        "Flow IAT Mean": 0.0528,
+        "Init_Win_bytes_forward": 0.0505
+      }
+    },
+    "attack flows": {
+      "auc": 1.0,
+      "cic": 15000,
+      "sim": 2304,
+      "top_features": {
+        "Flow IAT Min": 0.1431,
+        "Fwd IAT Min": 0.1345,
+        "Fwd Packet Length Max": 0.0953,
+        "Fwd Packet Length Min": 0.0799,
+        "Fwd Packet Length Mean": 0.0764,
+        "Min Packet Length": 0.0747,
+        "Avg Fwd Segment Size": 0.067,
+        "Max Packet Length": 0.0552
+      }
+    }
+  }
+}

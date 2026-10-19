@@ -1,0 +1,77 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    /* light — calm, near-white, hair-thin borders */
+    --background: 210 20% 99%;
+    --foreground: 222 24% 16%;
+    --card: 0 0% 100%;
+    --card-foreground: 222 24% 16%;
+    --primary: 224 64% 55%;
+    --primary-foreground: 0 0% 100%;
+    --secondary: 214 20% 96%;
+    --secondary-foreground: 222 22% 26%;
+    --muted: 214 20% 96%;
+    --muted-foreground: 220 9% 50%;
+    --accent: 214 22% 95%;
+    --accent-foreground: 222 22% 26%;
+    --destructive: 352 68% 52%;
+    --destructive-foreground: 0 0% 100%;
+    --border: 214 20% 91%;
+    --input: 214 20% 89%;
+    --ring: 224 64% 55%;
+    --radius: 0.625rem;
+    --benign: 158 58% 40%;
+    --attack: 352 72% 52%;
+    --blocked: 32 85% 50%;
+    --info: 224 64% 55%;
+    --grid: 214 20% 93%;
+  }
+
+  .dark {
+    /* dark — deep neutral graphite, not blue; low-chroma surfaces */
+    --background: 222 16% 8%;
+    --foreground: 210 16% 90%;
+    --card: 222 15% 10.5%;
+    --card-foreground: 210 16% 90%;
+    --primary: 222 72% 66%;
+    --primary-foreground: 222 20% 10%;
+    --secondary: 220 12% 16%;
+    --secondary-foreground: 210 14% 86%;
+    --muted: 220 12% 15%;
+    --muted-foreground: 218 9% 58%;
+    --accent: 220 12% 18%;
+    --accent-foreground: 210 14% 86%;
+    --destructive: 352 66% 58%;
+    --destructive-foreground: 0 0% 100%;
+    --border: 220 11% 18%;
+    --input: 220 11% 20%;
+    --ring: 222 72% 66%;
+    --benign: 158 52% 48%;
+    --attack: 352 72% 62%;
+    --blocked: 34 88% 58%;
+    --info: 222 72% 68%;
+    --grid: 220 11% 15%;
+  }
+
+  * { @apply border-border; }
+  body {
+    @apply bg-background text-foreground antialiased;
+    font-feature-settings: "cv02" 1, "cv03" 1, "cv04" 1, "ss01" 1;
+    letter-spacing: -0.006em;
+  }
+  html { scrollbar-gutter: stable; }
+  ::selection { background: hsl(var(--primary) / 0.22); }
+
+  /* slim, unobtrusive scrollbars */
+  ::-webkit-scrollbar { width: 8px; height: 8px; }
+  ::-webkit-scrollbar-thumb { background: hsl(var(--border)); border-radius: 999px; }
+  ::-webkit-scrollbar-track { background: transparent; }
+}
+
+.tabnum { font-variant-numeric: tabular-nums; }
+
+/* subtle sheen used sparingly on a single hero number */
+.text-balance { text-wrap: balance; }

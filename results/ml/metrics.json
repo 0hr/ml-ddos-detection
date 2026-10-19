@@ -1,0 +1,182 @@
+{
+  "data": {
+    "rows": 416011,
+    "train": 291207,
+    "val": 62402,
+    "test": 62402,
+    "benign_rows": 49239,
+    "attack_rows": 366772,
+    "extra_testbed_flows": 0
+  },
+  "sklearn_version": "1.9.1",
+  "models": {
+    "decision_tree": {
+      "fit_seconds": 3.4,
+      "predict_us_per_flow": 0.4,
+      "val": {
+        "threshold": 0.5,
+        "accuracy": 0.9982853113682254,
+        "precision": 0.9998907521713006,
+        "recall": 0.9981641704231496,
+        "f1": 0.9990267153005813,
+        "fpr": 0.0008123476848090983,
+        "roc_auc": 0.9996503528048319,
+        "pr_auc": 0.9999206657471011,
+        "confusion_matrix": {
+          "tn": 7380,
+          "fp": 6,
+          "fn": 101,
+          "tp": 54915
+        }
+      },
+      "test": {
+        "threshold": 0.5,
+        "accuracy": 0.9982372359860261,
+        "precision": 0.9998725418790969,
+        "recall": 0.9981278173622219,
+        "f1": 0.9989994178431088,
+        "fpr": 0.0009477389656106146,
+        "roc_auc": 0.9996040120037354,
+        "pr_auc": 0.9999132928523243,
+        "confusion_matrix": {
+          "tn": 7379,
+          "fp": 7,
+          "fn": 103,
+          "tp": 54913
+        }
+      },
+      "test_at_0.5": {
+        "threshold": 0.5,
+        "accuracy": 0.9982372359860261,
+        "precision": 0.9998725418790969,
+        "recall": 0.9981278173622219,
+        "f1": 0.9989994178431088,
+        "fpr": 0.0009477389656106146,
+        "roc_auc": 0.9996040120037354,
+        "pr_auc": 0.9999132928523243,
+        "confusion_matrix": {
+          "tn": 7379,
+          "fp": 7,
+          "fn": 103,
+          "tp": 54913
+        }
+      },
+      "per_label_flagged_rate": {
+        "BENIGN": 0.00095,
+        "DrDoS_DNS": 0.98129,
+        "DrDoS_LDAP": 0.99379,
+        "DrDoS_MSSQL": 0.99662,
+        "DrDoS_NTP": 0.99857,
+        "DrDoS_NetBIOS": 0.98286,
+        "DrDoS_SNMP": 0.98584,
+        "DrDoS_SSDP": 0.99965,
+        "DrDoS_UDP": 0.99929,
+        "Syn": 0.99876,
+        "TFTP": 0.99931,
+        "UDP-lag": 0.99637,
+        "WebDDoS": 0.77419
+      },
+      "feature_importance_top15": {
+        "Bwd Packets/s": 0.77387,
+        "Fwd Packet Length Max": 0.08338,
+        "Fwd IAT Std": 0.07932,
+        "Init_Win_bytes_forward": 0.02421,
+        "Packet Length Mean": 0.013,
+        "Fwd Packets/s": 0.01174,
+        "Total Fwd Packets": 0.00572,
+        "Average Packet Size": 0.00213,
+        "Fwd IAT Max": 0.00208,
+        "Flow Bytes/s": 0.00103,
+        "Init_Win_bytes_backward": 0.00072,
+        "Packet Length Std": 0.00059,
+        "Min Packet Length": 0.00057,
+        "Flow IAT Mean": 0.00056,
+        "Max Packet Length": 0.0002
+      }
+    },
+    "random_forest": {
+      "fit_seconds": 5.9,
+      "predict_us_per_flow": 2.46,
+      "val": {
+        "threshold": 0.67,
+        "accuracy": 0.9991827185026121,
+        "precision": 0.999890863451989,
+        "recall": 0.999182056129126,
+        "f1": 0.9995363341303537,
+        "fpr": 0.0008123476848090983,
+        "roc_auc": 0.9999949562958048,
+        "pr_auc": 0.9999993244195614,
+        "confusion_matrix": {
+          "tn": 7380,
+          "fp": 6,
+          "fn": 45,
+          "tp": 54971
+        }
+      },
+      "test": {
+        "threshold": 0.67,
+        "accuracy": 0.9990064421012147,
+        "precision": 0.9998180958271182,
+        "recall": 0.999054820415879,
+        "f1": 0.9994363123920357,
+        "fpr": 0.0013539128080151638,
+        "roc_auc": 0.9999934083621924,
+        "pr_auc": 0.9999991131609378,
+        "confusion_matrix": {
+          "tn": 7376,
+          "fp": 10,
+          "fn": 52,
+          "tp": 54964
+        }
+      },
+      "test_at_0.5": {
+        "threshold": 0.5,
+        "accuracy": 0.9993589949040095,
+        "precision": 0.999745473056505,
+        "recall": 0.9995274102079396,
+        "f1": 0.9996364297400473,
+        "fpr": 0.0018954779312212293,
+        "roc_auc": 0.9999934083621924,
+        "pr_auc": 0.9999991131609378,
+        "confusion_matrix": {
+          "tn": 7372,
+          "fp": 14,
+          "fn": 26,
+          "tp": 54990
+        }
+      },
+      "per_label_flagged_rate": {
+        "BENIGN": 0.00135,
+        "DrDoS_DNS": 0.9898,
+        "DrDoS_LDAP": 0.99379,
+        "DrDoS_MSSQL": 1.0,
+        "DrDoS_NTP": 0.99947,
+        "DrDoS_NetBIOS": 0.99429,
+        "DrDoS_SNMP": 1.0,
+        "DrDoS_SSDP": 1.0,
+        "DrDoS_UDP": 0.99976,
+        "Syn": 0.99546,
+        "TFTP": 0.99945,
+        "UDP-lag": 0.99891,
+        "WebDDoS": 0.83871
+      },
+      "feature_importance_top15": {
+        "Min Packet Length": 0.12532,
+        "Fwd Packet Length Min": 0.09779,
+        "Bwd Packets/s": 0.09524,
+        "Avg Fwd Segment Size": 0.08181,
+        "Fwd Packet Length Mean": 0.08025,
+        "Total Backward Packets": 0.0607,
+        "Average Packet Size": 0.06006,
+        "Bwd IAT Total": 0.04788,
+        "Bwd IAT Mean": 0.03511,
+        "Packet Length Mean": 0.03251,
+        "Fwd IAT Max": 0.02043,
+        "Fwd Packet Length Max": 0.01926,
+        "Fwd IAT Std": 0.01845,
+        "Init_Win_bytes_backward": 0.017,
+        "Fwd IAT Mean": 0.01578
+      }
+    }
+  }
+}

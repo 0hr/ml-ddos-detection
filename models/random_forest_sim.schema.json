@@ -1,0 +1,278 @@
+{
+  "features": [
+    "Protocol",
+    "Flow Duration",
+    "Total Fwd Packets",
+    "Total Backward Packets",
+    "Total Length of Fwd Packets",
+    "Total Length of Bwd Packets",
+    "Fwd Packet Length Max",
+    "Fwd Packet Length Min",
+    "Fwd Packet Length Mean",
+    "Fwd Packet Length Std",
+    "Bwd Packet Length Max",
+    "Bwd Packet Length Min",
+    "Bwd Packet Length Mean",
+    "Bwd Packet Length Std",
+    "Flow Bytes/s",
+    "Flow Packets/s",
+    "Flow IAT Mean",
+    "Flow IAT Std",
+    "Flow IAT Max",
+    "Flow IAT Min",
+    "Fwd IAT Total",
+    "Fwd IAT Mean",
+    "Fwd IAT Std",
+    "Fwd IAT Max",
+    "Fwd IAT Min",
+    "Bwd IAT Total",
+    "Bwd IAT Mean",
+    "Bwd IAT Std",
+    "Bwd IAT Max",
+    "Bwd IAT Min",
+    "Fwd Packets/s",
+    "Bwd Packets/s",
+    "Min Packet Length",
+    "Max Packet Length",
+    "Packet Length Mean",
+    "Packet Length Std",
+    "Packet Length Variance",
+    "Down/Up Ratio",
+    "Average Packet Size",
+    "Avg Fwd Segment Size",
+    "Avg Bwd Segment Size",
+    "Init_Win_bytes_forward",
+    "Init_Win_bytes_backward"
+  ],
+  "schema_hash": "bd9bdfc19660e907",
+  "dtype": "float64",
+  "units": {
+    "time": "microseconds",
+    "length": "transport payload bytes",
+    "rates": "per second"
+  },
+  "conventions": {
+    "flow": "bidirectional 5-tuple, forward = first packet sender, FIN or 120 s ends a flow, >= 2 packets",
+    "std": "sample std (ddof=1), 0 with < 2 values",
+    "min_duration_us": 1.0,
+    "packet_length_overall": "first packet counted twice (CICFlowMeter-V3 behaviour)",
+    "init_win_missing": -1
+  },
+  "train_ranges": {
+    "Protocol": {
+      "min": 6.0,
+      "median": 6.0,
+      "max": 17.0
+    },
+    "Flow Duration": {
+      "min": 0.0,
+      "median": 24150.5,
+      "max": 49906761.0
+    },
+    "Total Fwd Packets": {
+      "min": 1.0,
+      "median": 3.0,
+      "max": 7334.0
+    },
+    "Total Backward Packets": {
+      "min": 0.0,
+      "median": 1.0,
+      "max": 403.0
+    },
+    "Total Length of Fwd Packets": {
+      "min": 0.0,
+      "median": 0.0,
+      "max": 3755008.0
+    },
+    "Total Length of Bwd Packets": {
+      "min": 0.0,
+      "median": 0.0,
+      "max": 1048755.0
+    },
+    "Fwd Packet Length Max": {
+      "min": 0.0,
+      "median": 0.0,
+      "max": 5792.0
+    },
+    "Fwd Packet Length Min": {
+      "min": 0.0,
+      "median": 0.0,
+      "max": 1448.0
+    },
+    "Fwd Packet Length Mean": {
+      "min": 0.0,
+      "median": 0.0,
+      "max": 3593.452054794521
+    },
+    "Fwd Packet Length Std": {
+      "min": 0.0,
+      "median": 0.0,
+      "max": 1618.227605893215
+    },
+    "Bwd Packet Length Max": {
+      "min": 0.0,
+      "median": 0.0,
+      "max": 5792.0
+    },
+    "Bwd Packet Length Min": {
+      "min": 0.0,
+      "median": 0.0,
+      "max": 1448.0
+    },
+    "Bwd Packet Length Mean": {
+      "min": 0.0,
+      "median": 0.0,
+      "max": 3643.3611111111118
+    },
+    "Bwd Packet Length Std": {
+      "min": 0.0,
+      "median": 0.0,
+      "max": 1688.3506353105752
+    },
+    "Flow Bytes/s": {
+      "min": 0.0,
+      "median": 0.0,
+      "max": 1668323.6288743673
+    },
+    "Flow Packets/s": {
+      "min": 0.04020039575681607,
+      "median": 341.7567547630091,
+      "max": 2000000.0
+    },
+    "Flow IAT Mean": {
+      "min": 0.0,
+      "median": 3661.666666666667,
+      "max": 49750754.0
+    },
+    "Flow IAT Std": {
+      "min": 0.0,
+      "median": 4942.821292878525,
+      "max": 28678658.84136943
+    },
+    "Flow IAT Max": {
+      "min": 0.0,
+      "median": 9102.0,
+      "max": 49750754.0
+    },
+    "Flow IAT Min": {
+      "min": -4.0,
+      "median": 65.0,
+      "max": 49750754.0
+    },
+    "Fwd IAT Total": {
+      "min": 0.0,
+      "median": 22142.5,
+      "max": 49897742.0
+    },
+    "Fwd IAT Mean": {
+      "min": 0.0,
+      "median": 7294.5,
+      "max": 49897742.0
+    },
+    "Fwd IAT Std": {
+      "min": 0.0,
+      "median": 7168.648547669219,
+      "max": 23379497.586475134
+    },
+    "Fwd IAT Max": {
+      "min": 0.0,
+      "median": 12518.0,
+      "max": 49897742.0
+    },
+    "Fwd IAT Min": {
+      "min": 0.0,
+      "median": 60.0,
+      "max": 49897742.0
+    },
+    "Bwd IAT Total": {
+      "min": 0.0,
+      "median": 0.0,
+      "max": 29393810.0
+    },
+    "Bwd IAT Mean": {
+      "min": 0.0,
+      "median": 0.0,
+      "max": 29375479.0
+    },
+    "Bwd IAT Std": {
+      "min": 0.0,
+      "median": 0.0,
+      "max": 16391720.187650364
+    },
+    "Bwd IAT Max": {
+      "min": 0.0,
+      "median": 0.0,
+      "max": 29375479.0
+    },
+    "Bwd IAT Min": {
+      "min": 0.0,
+      "median": 0.0,
+      "max": 29375479.0
+    },
+    "Fwd Packets/s": {
+      "min": 0.020100197878408034,
+      "median": 170.03910899506886,
+      "max": 2000000.0
+    },
+    "Bwd Packets/s": {
+      "min": 0.0,
+      "median": 83.94270934097594,
+      "max": 1000000.0
+    },
+    "Min Packet Length": {
+      "min": 0.0,
+      "median": 0.0,
+      "max": 1448.0
+    },
+    "Max Packet Length": {
+      "min": 0.0,
+      "median": 0.0,
+      "max": 5792.0
+    },
+    "Packet Length Mean": {
+      "min": 0.0,
+      "median": 0.0,
+      "max": 2325.6940133037683
+    },
+    "Packet Length Std": {
+      "min": 0.0,
+      "median": 0.0,
+      "max": 2163.8453912030805
+    },
+    "Packet Length Variance": {
+      "min": 0.0,
+      "median": 0.0,
+      "max": 4682226.877030813
+    },
+    "Down/Up Ratio": {
+      "min": 0.0,
+      "median": 0.0,
+      "max": 7.0
+    },
+    "Average Packet Size": {
+      "min": 0.0,
+      "median": 0.0,
+      "max": 2330.862222222222
+    },
+    "Avg Fwd Segment Size": {
+      "min": 0.0,
+      "median": 0.0,
+      "max": 3593.452054794521
+    },
+    "Avg Bwd Segment Size": {
+      "min": 0.0,
+      "median": 0.0,
+      "max": 3643.3611111111118
+    },
+    "Init_Win_bytes_forward": {
+      "min": -1.0,
+      "median": 42340.0,
+      "max": 42340.0
+    },
+    "Init_Win_bytes_backward": {
+      "min": -1.0,
+      "median": 43440.0,
+      "max": 43440.0
+    }
+  }
+}

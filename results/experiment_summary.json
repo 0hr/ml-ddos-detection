@@ -1,0 +1,435 @@
+{
+  "args": {
+    "scenario": "all",
+    "hosts": 6,
+    "duration": 40.0,
+    "attack_delay": 8,
+    "attack_threads": 8,
+    "model": "/home/harun/PycharmProjects/ML-DDoS/models/random_forest.joblib",
+    "of_port": 6653,
+    "api_port": 8080,
+    "block_seconds": 20,
+    "window": 6.0,
+    "min_flows": 5,
+    "idle_timeout": 2.0,
+    "repeat": 3
+  },
+  "scenarios": {
+    "normal": [
+      {
+        "scenario": "normal",
+        "repeat": 1,
+        "config": {
+          "benign_rate": 2.0,
+          "attack": null,
+          "mitigate": false
+        },
+        "hosts": 6,
+        "duration": 40.0,
+        "attacker_ips": [],
+        "benign_ips": [
+          "10.0.0.2",
+          "10.0.0.4",
+          "10.0.0.6"
+        ],
+        "server_ip": "10.0.0.100",
+        "capture_interface": "s1-eth2",
+        "t_start": 1792387278.7408845,
+        "attack_start": null,
+        "t_end": 1792387323.7442298,
+        "final_status": {
+          "switches": [
+            1,
+            2
+          ],
+          "whitelist": [
+            "10.0.0.100"
+          ],
+          "blocks": {}
+        }
+      },
+      {
+        "scenario": "normal",
+        "repeat": 2,
+        "config": {
+          "benign_rate": 2.0,
+          "attack": null,
+          "mitigate": false
+        },
+        "hosts": 6,
+        "duration": 40.0,
+        "attacker_ips": [],
+        "benign_ips": [
+          "10.0.0.2",
+          "10.0.0.4",
+          "10.0.0.6"
+        ],
+        "server_ip": "10.0.0.100",
+        "capture_interface": "s1-eth2",
+        "t_start": 1792387557.8801684,
+        "attack_start": null,
+        "t_end": 1792387602.8846188,
+        "final_status": {
+          "switches": [
+            1,
+            2
+          ],
+          "whitelist": [
+            "10.0.0.100"
+          ],
+          "blocks": {}
+        }
+      },
+      {
+        "scenario": "normal",
+        "repeat": 3,
+        "config": {
+          "benign_rate": 2.0,
+          "attack": null,
+          "mitigate": false
+        },
+        "hosts": 6,
+        "duration": 40.0,
+        "attacker_ips": [],
+        "benign_ips": [
+          "10.0.0.2",
+          "10.0.0.4",
+          "10.0.0.6"
+        ],
+        "server_ip": "10.0.0.100",
+        "capture_interface": "s1-eth2",
+        "t_start": 1792387837.0572724,
+        "attack_start": null,
+        "t_end": 1792387882.0605326,
+        "final_status": {
+          "switches": [
+            1,
+            2
+          ],
+          "whitelist": [
+            "10.0.0.100"
+          ],
+          "blocks": {}
+        }
+      }
+    ],
+    "highload": [
+      {
+        "scenario": "highload",
+        "repeat": 1,
+        "config": {
+          "benign_rate": 12.0,
+          "attack": null,
+          "mitigate": false
+        },
+        "hosts": 6,
+        "duration": 40.0,
+        "attacker_ips": [],
+        "benign_ips": [
+          "10.0.0.2",
+          "10.0.0.4",
+          "10.0.0.6"
+        ],
+        "server_ip": "10.0.0.100",
+        "capture_interface": "s1-eth2",
+        "t_start": 1792387347.347076,
+        "attack_start": null,
+        "t_end": 1792387392.3501348,
+        "final_status": {
+          "switches": [
+            1,
+            2
+          ],
+          "whitelist": [
+            "10.0.0.100"
+          ],
+          "blocks": {}
+        }
+      },
+      {
+        "scenario": "highload",
+        "repeat": 2,
+        "config": {
+          "benign_rate": 12.0,
+          "attack": null,
+          "mitigate": false
+        },
+        "hosts": 6,
+        "duration": 40.0,
+        "attacker_ips": [],
+        "benign_ips": [
+          "10.0.0.2",
+          "10.0.0.4",
+          "10.0.0.6"
+        ],
+        "server_ip": "10.0.0.100",
+        "capture_interface": "s1-eth2",
+        "t_start": 1792387623.7722244,
+        "attack_start": null,
+        "t_end": 1792387668.77626,
+        "final_status": {
+          "switches": [
+            1,
+            2
+          ],
+          "whitelist": [
+            "10.0.0.100"
+          ],
+          "blocks": {}
+        }
+      },
+      {
+        "scenario": "highload",
+        "repeat": 3,
+        "config": {
+          "benign_rate": 12.0,
+          "attack": null,
+          "mitigate": false
+        },
+        "hosts": 6,
+        "duration": 40.0,
+        "attacker_ips": [],
+        "benign_ips": [
+          "10.0.0.2",
+          "10.0.0.4",
+          "10.0.0.6"
+        ],
+        "server_ip": "10.0.0.100",
+        "capture_interface": "s1-eth2",
+        "t_start": 1792387902.8379872,
+        "attack_start": null,
+        "t_end": 1792387947.840823,
+        "final_status": {
+          "switches": [
+            1,
+            2
+          ],
+          "whitelist": [
+            "10.0.0.100"
+          ],
+          "blocks": {}
+        }
+      }
+    ],
+    "attack_nomit": [
+      {
+        "scenario": "attack_nomit",
+        "repeat": 1,
+        "config": {
+          "benign_rate": 2.0,
+          "attack": "udp",
+          "mitigate": false
+        },
+        "hosts": 6,
+        "duration": 40.0,
+        "attacker_ips": [
+          "10.0.0.1",
+          "10.0.0.3",
+          "10.0.0.5"
+        ],
+        "benign_ips": [
+          "10.0.0.2",
+          "10.0.0.4",
+          "10.0.0.6"
+        ],
+        "server_ip": "10.0.0.100",
+        "capture_interface": "s1-eth2",
+        "t_start": 1792387413.8149858,
+        "attack_start": 1792387421.818177,
+        "t_end": 1792387463.8206449,
+        "final_status": {
+          "switches": [
+            1,
+            2
+          ],
+          "whitelist": [
+            "10.0.0.100"
+          ],
+          "blocks": {}
+        }
+      },
+      {
+        "scenario": "attack_nomit",
+        "repeat": 2,
+        "config": {
+          "benign_rate": 2.0,
+          "attack": "udp",
+          "mitigate": false
+        },
+        "hosts": 6,
+        "duration": 40.0,
+        "attacker_ips": [
+          "10.0.0.1",
+          "10.0.0.3",
+          "10.0.0.5"
+        ],
+        "benign_ips": [
+          "10.0.0.2",
+          "10.0.0.4",
+          "10.0.0.6"
+        ],
+        "server_ip": "10.0.0.100",
+        "capture_interface": "s1-eth2",
+        "t_start": 1792387693.0933197,
+        "attack_start": 1792387701.0975583,
+        "t_end": 1792387743.1017878,
+        "final_status": {
+          "switches": [
+            1,
+            2
+          ],
+          "whitelist": [
+            "10.0.0.100"
+          ],
+          "blocks": {}
+        }
+      },
+      {
+        "scenario": "attack_nomit",
+        "repeat": 3,
+        "config": {
+          "benign_rate": 2.0,
+          "attack": "udp",
+          "mitigate": false
+        },
+        "hosts": 6,
+        "duration": 40.0,
+        "attacker_ips": [
+          "10.0.0.1",
+          "10.0.0.3",
+          "10.0.0.5"
+        ],
+        "benign_ips": [
+          "10.0.0.2",
+          "10.0.0.4",
+          "10.0.0.6"
+        ],
+        "server_ip": "10.0.0.100",
+        "capture_interface": "s1-eth2",
+        "t_start": 1792387968.797065,
+        "attack_start": 1792387976.801363,
+        "t_end": 1792388018.8056757,
+        "final_status": {
+          "switches": [
+            1,
+            2
+          ],
+          "whitelist": [
+            "10.0.0.100"
+          ],
+          "blocks": {}
+        }
+      }
+    ],
+    "attack_mit": [
+      {
+        "scenario": "attack_mit",
+        "repeat": 1,
+        "config": {
+          "benign_rate": 2.0,
+          "attack": "udp",
+          "mitigate": true
+        },
+        "hosts": 6,
+        "duration": 40.0,
+        "attacker_ips": [
+          "10.0.0.1",
+          "10.0.0.3",
+          "10.0.0.5"
+        ],
+        "benign_ips": [
+          "10.0.0.2",
+          "10.0.0.4",
+          "10.0.0.6"
+        ],
+        "server_ip": "10.0.0.100",
+        "capture_interface": "s1-eth2",
+        "t_start": 1792387485.4425871,
+        "attack_start": 1792387493.4464014,
+        "t_end": 1792387535.4487765,
+        "final_status": {
+          "switches": [
+            1,
+            2
+          ],
+          "whitelist": [
+            "10.0.0.100"
+          ],
+          "blocks": {}
+        }
+      },
+      {
+        "scenario": "attack_mit",
+        "repeat": 2,
+        "config": {
+          "benign_rate": 2.0,
+          "attack": "udp",
+          "mitigate": true
+        },
+        "hosts": 6,
+        "duration": 40.0,
+        "attacker_ips": [
+          "10.0.0.1",
+          "10.0.0.3",
+          "10.0.0.5"
+        ],
+        "benign_ips": [
+          "10.0.0.2",
+          "10.0.0.4",
+          "10.0.0.6"
+        ],
+        "server_ip": "10.0.0.100",
+        "capture_interface": "s1-eth2",
+        "t_start": 1792387764.6812289,
+        "attack_start": 1792387772.6854186,
+        "t_end": 1792387814.6898146,
+        "final_status": {
+          "switches": [
+            1,
+            2
+          ],
+          "whitelist": [
+            "10.0.0.100"
+          ],
+          "blocks": {}
+        }
+      },
+      {
+        "scenario": "attack_mit",
+        "repeat": 3,
+        "config": {
+          "benign_rate": 2.0,
+          "attack": "udp",
+          "mitigate": true
+        },
+        "hosts": 6,
+        "duration": 40.0,
+        "attacker_ips": [
+          "10.0.0.1",
+          "10.0.0.3",
+          "10.0.0.5"
+        ],
+        "benign_ips": [
+          "10.0.0.2",
+          "10.0.0.4",
+          "10.0.0.6"
+        ],
+        "server_ip": "10.0.0.100",
+        "capture_interface": "s1-eth2",
+        "t_start": 1792388041.2533524,
+        "attack_start": 1792388049.256786,
+        "t_end": 1792388091.258616,
+        "final_status": {
+          "switches": [
+            1,
+            2
+          ],
+          "whitelist": [
+            "10.0.0.100"
+          ],
+          "blocks": {}
+        }
+      }
+    ]
+  }
+}

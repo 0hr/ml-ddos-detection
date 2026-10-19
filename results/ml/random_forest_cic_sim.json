@@ -1,0 +1,51 @@
+{
+  "mode": "combined",
+  "sim_dataset": "/home/harun/PycharmProjects/ML-DDoS/simulation/data/20261115-120806/dataset.parquet",
+  "split": "by repetition: repetition 3 held out as test (3 repetitions)",
+  "fit_seconds": 4.3,
+  "train_flows": 351087,
+  "cic_train_flows": 291207,
+  "sim_train_flows": 59880,
+  "threshold": 0.78,
+  "test": {
+    "CIC-DDoS2019": {
+      "accuracy": 0.9984936380244223,
+      "precision": 0.9999089783732615,
+      "recall": 0.998382288788716,
+      "f1": 0.999145050387456,
+      "fpr": 0.0006769564040075819,
+      "roc_auc": 0.9999940026801056,
+      "pr_auc": 0.9999991948185735,
+      "per_label": {
+        "BENIGN": 0.0007,
+        "DrDoS_DNS": 0.9881,
+        "DrDoS_LDAP": 0.9876,
+        "DrDoS_MSSQL": 0.9983,
+        "DrDoS_NTP": 0.9993,
+        "DrDoS_NetBIOS": 0.9886,
+        "DrDoS_SNMP": 0.9972,
+        "DrDoS_SSDP": 0.9998,
+        "DrDoS_UDP": 0.9998,
+        "Syn": 0.9917,
+        "TFTP": 0.9993,
+        "UDP-lag": 0.9978,
+        "WebDDoS": 0.6613
+      }
+    },
+    "Simulated": {
+      "accuracy": 0.899145500156789,
+      "precision": 0.9849565026224051,
+      "recall": 0.8704654583807488,
+      "f1": 0.9241785766907322,
+      "fpr": 0.03194398132710904,
+      "roc_auc": 0.9863428492465839,
+      "pr_auc": 0.993986198267709,
+      "per_label": {
+        "BENIGN": 0.0319,
+        "Sim-HTTP-flood": 0.6143,
+        "Sim-TCP-connect-flood": 0.9994,
+        "Sim-UDP-flood": 1.0
+      }
+    }
+  }
+}

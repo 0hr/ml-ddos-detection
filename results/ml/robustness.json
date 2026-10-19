@@ -1,0 +1,111 @@
+{
+  "threshold": 0.67,
+  "cv": {
+    "recall": {
+      "mean": 0.9989175838691906,
+      "std": 6.14175583035755e-05
+    },
+    "fpr": {
+      "mean": 0.0007311170411767962,
+      "std": 0.0003893165146284051
+    },
+    "f1": {
+      "mean": 0.9994094241549923,
+      "std": 2.9574675011431247e-05
+    }
+  },
+  "temporal": {
+    "recall": 0.9966013594562175,
+    "fpr": 0.0,
+    "f1": 0.9982977871232602
+  },
+  "temporal_by_label": {
+    "BENIGN": 0.0,
+    "DrDoS_DNS": 0.9711,
+    "DrDoS_LDAP": 0.9877,
+    "DrDoS_MSSQL": 1.0,
+    "DrDoS_NTP": 0.9995,
+    "DrDoS_NetBIOS": 0.9657,
+    "DrDoS_SNMP": 0.9887,
+    "DrDoS_SSDP": 0.9998,
+    "DrDoS_UDP": 1.0,
+    "Syn": 0.9818,
+    "TFTP": 0.9996,
+    "UDP-lag": 0.9844,
+    "WebDDoS": 0.7903
+  },
+  "loao": [
+    {
+      "attack": "DrDoS_DNS",
+      "flows": 3925,
+      "detected": 0.9459872611464968,
+      "benign_fpr": 0.0005166890565257828
+    },
+    {
+      "attack": "DrDoS_LDAP",
+      "flows": 1074,
+      "detected": 0.9897579143389199,
+      "benign_fpr": 0.0007233646791360959
+    },
+    {
+      "attack": "DrDoS_MSSQL",
+      "flows": 3943,
+      "detected": 0.9989855440020289,
+      "benign_fpr": 0.0007233646791360959
+    },
+    {
+      "attack": "DrDoS_NTP",
+      "flows": 139389,
+      "detected": 0.9958318088227909,
+      "benign_fpr": 0.0007233646791360959
+    },
+    {
+      "attack": "DrDoS_NetBIOS",
+      "flows": 1162,
+      "detected": 0.8648881239242685,
+      "benign_fpr": 0.0007233646791360959
+    },
+    {
+      "attack": "DrDoS_SNMP",
+      "flows": 2351,
+      "detected": 0.994470438111442,
+      "benign_fpr": 0.0007233646791360959
+    },
+    {
+      "attack": "DrDoS_SSDP",
+      "flows": 56394,
+      "detected": 0.9997694790225911,
+      "benign_fpr": 0.0007233646791360959
+    },
+    {
+      "attack": "DrDoS_UDP",
+      "flows": 56599,
+      "detected": 0.9998056502765067,
+      "benign_fpr": 0.0007233646791360959
+    },
+    {
+      "attack": "Syn",
+      "flows": 16151,
+      "detected": 0.9949229149897839,
+      "benign_fpr": 0.0007233646791360959
+    },
+    {
+      "attack": "TFTP",
+      "flows": 48649,
+      "detected": 0.9992600053444058,
+      "benign_fpr": 0.0006200268678309394
+    },
+    {
+      "attack": "UDP-lag",
+      "flows": 36723,
+      "detected": 0.9946355145276802,
+      "benign_fpr": 0.0006200268678309394
+    },
+    {
+      "attack": "WebDDoS",
+      "flows": 412,
+      "detected": 0.7839805825242718,
+      "benign_fpr": 0.0007233646791360959
+    }
+  ]
+}
